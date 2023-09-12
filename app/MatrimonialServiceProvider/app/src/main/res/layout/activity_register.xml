@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/top_background" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="SignUp"
+            android:textColor="@color/pink"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/profile_add"
+            app:civ_border_color="@color/pink"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+
+            android:id="@+id/editText_name"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+
+
+        <EditText
+
+            android:id="@+id/editText_email"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_name" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+        <EditText
+            android:id="@+id/editTextCast"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Caste"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/password"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        <EditText
+            android:id="@+id/editTextOccupation"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Occupation"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/password"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCast" />
+        <EditText
+            android:id="@+id/editTextSalary"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Current salary"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextOccupation" />
+        <EditText
+            android:id="@+id/editTextMobileNo"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Mobile No."
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/ic_baseline_call_24"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSalary" />
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="City"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMobileNo" />
+
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+            android:checkedButton="@id/radioMale"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/editTextCity"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCity">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="90dp"
+                android:padding="16dp"
+                android:layout_height="90dp"
+                android:button="@android:color/transparent"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:minHeight="48dp"
+                android:text="Male"
+                app:drawableTint = "@color/gender_text_selector"
+                android:textColor="@color/gender_text_selector"
+                android:background="@drawable/gender_background_selector"
+                android:drawableTop="@drawable/icon_male"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:button="@android:color/transparent"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:minHeight="48dp"
+                android:layout_marginStart="16dp"
+                android:padding="16dp"
+                android:textColor="@color/gender_text_selector"
+                android:background="@drawable/gender_background_selector"
+                android:text="Female"
+                app:drawableTint = "@color/gender_text_selector"
+                android:drawableTop="@drawable/icon_female"/>
+
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radioMarry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checkedButton="@id/radioMarried"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/radioSex"
+            app:layout_constraintTop_toBottomOf="@+id/radioSex">
+
+            <RadioButton
+                android:id="@+id/radioMarried"
+                android:layout_width="90dp"
+                android:padding="16dp"
+                android:layout_height="90dp"
+                android:button="@android:color/transparent"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:minHeight="48dp"
+                android:text="Married"
+                app:drawableTint = "@color/gender_text_selector"
+                android:textColor="@color/gender_text_selector"
+                android:background="@drawable/gender_background_selector" />
+
+            <RadioButton
+                android:id="@+id/radioUnMarried"
+                android:layout_width="90dp"
+                android:padding="16dp"
+                android:layout_height="90dp"
+                android:button="@android:color/transparent"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:minHeight="48dp"
+                android:text="UnMarried"
+                android:layout_marginStart="16dp"
+                app:drawableTint = "@color/gender_text_selector"
+                android:textColor="@color/gender_text_selector"
+                android:background="@drawable/gender_background_selector"  />
+
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/religion"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="10dp"
+            android:ems="10"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:drawableStart="@drawable/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#756c6c"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioMarry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/RegisterButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:text="Register"
+            android:elevation="10dp"
+            android:layout_margin="24dp"
+            style="@android:style/Widget.Button"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            android:background="@drawable/button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/religion" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:text="Already have an account? Login"
+            android:textColor="@color/pink"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
